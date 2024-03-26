@@ -59,35 +59,35 @@ EOF  help  quit
 $
 Project Structure
 .
-AUTHORS
-console.py
- models
- __init__.py
-amenity.py
-base_model.py
- city.py
-engine
- __init__.py
- file_storage.py
- place.py
- review.py
- state.py
- user.py
- README.md
-tests
-   __init__.py
-   test_models
-       __init__.py
-       engine
-      __init__.py
-       test_file_storage.py
-       test_amenity.py
-      test_base_model.py
-      test_city.py
-      test_place.py
-      test_review.py
-      test_state.py
-      test_user.py
+__AUTHORS
+__console.py
+__ models
+__  __init__.py
+__amenity.py
+__base_model.py
+ __city.py
+__engine
+__  __init__.py
+ __file_storage.py
+ __place.py
+ __review.py
+ __state.py
+ __user.py
+ __README.md
+__tests
+__  __init__.py
+__ test_models
+__    __init__.py
+__engine
+__  __init__.py
+__test_file_storage.py
+__test_amenity.py
+__test_base_model.py
+__test_city.py
+__test_place.py
+__test_review.py
+__test_state.py
+___test_user.py
 Installation
 You can run this program on your local machine by following these steps:
 
@@ -105,4 +105,5 @@ Step 4: enter your command (In this example, our command is "help")
 
 (hbnb) help
 
-
+Contributors
+This project was written by Mariacelin Oshiomah. See the AUTHORS file for more information.
