@@ -1,30 +1,27 @@
-AirBnB Clone
+AirBnB_clone - The Console
+Command interpreter to manage the AirBnB objects
 
-The AirBnB clone project starts now until… the end of the first year. The goal of the project is to deploy on your server a simple copy of the Airbnb Website.
+About this project
+The AirBnB_clone is the first step towards building our first full web application.
+This web application is composed by:
 
-You won’t implement all the features, but be implemented in phases. After 4 months, you will have a complete web application composed by:
-
-A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)
+A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging).
 A website (the front-end) that shows the final product to everybody: static and dynamic
-A database or files that store data (data = objects)
-An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
-Installation
-To Use the AIrBnB clone, clone the repository to your local machine and run the console.py file:
+A database or files that store data (data = objects).
+An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them).
+console In this project, we will manipulate 2 types of storage: file and database.
+In this repository, we will focus only on the command interpreter and file storage.
+About the command interpreter (the console)
+Command line interpreter that manipulates data and manages serialization and deserialization of objects.
+How it works
+The console:
 
-git clone https://github.com/FourtyThree43/AirBnB_clone.git
-cd AirBnB_clone
-./console.py
-Phase One
-First step: Write a command interpreter to manage your AirBnB objects.
-
-Description of the command interpreter
-What’s a command interpreter? Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
-
-Create a new object (ex: a new User or a new Place)
-Retrieve an object from a file, a database etc…
-Do operations on objects (count, compute stats, etc…)
-Update attributes of an object
-Destroy an object
+Displays the prompt (default prompt: "(cmd)", our prompt: "(hbnb)") and waits for user input.
+Reads the entered command and the argument.
+Looks for the function of the command. For example: entering the command "all", makes the console looks for "do_all(self, arg)" function.
+Executes the function.
+If the typed command (the function) doesn't exist, the console prints an Error message.
+Quits when the user enters "quit" or "EOF" or presses Ctrl+d.
 Usage
 Your shell should work like this in interactive mode:
 
@@ -62,40 +59,50 @@ EOF  help  quit
 $
 Project Structure
 .
-├── AUTHORS
-├── console.py
-├── hbnb.png
-├── LICENSE
-├── models
-│  ├── __init__.py
-│  ├── amenity.py
-│  ├── base_model.py
-│  ├── city.py
-│  ├── engine
-│  │  ├── __init__.py
-│  │  └── file_storage.py
-│  ├── place.py
-│  ├── review.py
-│  ├── state.py
-│  └── user.py
-├── myScripts
-│  ├── genAuthors-1.sh
-│  ├── genAuthors-2.rb
-│  ├── generate-authors.sh
-│  ├── pyDoc-script.sh
-│  └── pyTest-script.sh
-├── README.md
-└── tests
-   ├── __init__.py
-   └── test_models
-      ├── __init__.py
-      ├── engine
-      │  ├── __init__.py
-      │  └── test_file_storage.py
-      ├── test_amenity.py
-      ├── test_base_model.py
-      ├── test_city.py
-      ├── test_place.py
-      ├── test_review.py
-      ├── test_state.py
-      └── test_user.py
+AUTHORS
+console.py
+ models
+ __init__.py
+amenity.py
+base_model.py
+ city.py
+engine
+ __init__.py
+ file_storage.py
+ place.py
+ review.py
+ state.py
+ user.py
+ README.md
+tests
+   __init__.py
+   test_models
+       __init__.py
+       engine
+      __init__.py
+       test_file_storage.py
+       test_amenity.py
+      test_base_model.py
+      test_city.py
+      test_place.py
+      test_review.py
+      test_state.py
+      test_user.py
+Installation
+You can run this program on your local machine by following these steps:
+
+Step 1: Clone our repository using this command, (you need to have git and python3 installed on your machine first)
+
+git clone https://github.com/Mclina/AirBnB_clone.git
+Step 2: Change directory to AirBnB_clone:
+
+cd AirBnB_clone
+Step 3: Execute the console in this way:
+
+./console.py
+
+Step 4: enter your command (In this example, our command is "help")
+
+(hbnb) help
+
+
