@@ -57,37 +57,6 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
-Project Structure
-.
-__AUTHORS
-__console.py
-__ models
-__  __init__.py
-__amenity.py
-__base_model.py
- __city.py
-__engine
-__  __init__.py
- __file_storage.py
- __place.py
- __review.py
- __state.py
- __user.py
- __README.md
-__tests
-__  __init__.py
-__ test_models
-__    __init__.py
-__engine
-__  __init__.py
-__test_file_storage.py
-__test_amenity.py
-__test_base_model.py
-__test_city.py
-__test_place.py
-__test_review.py
-__test_state.py
-___test_user.py
 Installation
 You can run this program on your local machine by following these steps:
 
